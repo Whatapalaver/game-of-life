@@ -1,14 +1,17 @@
 class Cell
-  attr_accessor :alive, :x_coord, :y_coord
+  attr_accessor :alive, :index
 
-  def initialize(x_coord = 0, y_coord = 0)
+  def initialize()
     @alive = false
-    @x_coord = x_coord
-    @y_coord = y_coord
+    @index = index
   end
 
   def alive?
-    @alive == true
+    alive
+  end
+
+  def dead?
+    !alive
   end
 
 end

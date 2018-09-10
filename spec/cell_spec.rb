@@ -10,8 +10,9 @@ describe Cell do
     end
     it 'responds to expected methods' do
       expect(cell).to respond_to(:alive)
-      expect(cell).to respond_to(:x_coord)
-      expect(cell).to respond_to(:y_coord)
+      expect(cell).to respond_to(:alive?)
+      expect(cell).to respond_to(:dead?)
+      expect(cell).to respond_to(:index)
     end
     it 'is not alive on initiation' do
       expect(cell.alive?).to eq false
