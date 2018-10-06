@@ -1,7 +1,7 @@
 class Cell
   attr_accessor :alive, :index
 
-  def initialize()
+  def initialize(index)
     @alive = false
     @index = index
   end
@@ -13,4 +13,5 @@ class Cell
   def dead?
     !alive
   end
+
 end

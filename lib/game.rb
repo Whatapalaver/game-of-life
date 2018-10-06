@@ -1,3 +1,5 @@
+require './lib/grid.rb'
+
 class Game
   attr_accessor :grid, :seeds
 
@@ -10,8 +12,6 @@ class Game
     end
 
   end
-
-
 
   private
 
