@@ -5,15 +5,6 @@ describe Grid do
   subject(:test_grid) { described_class.new }
 
   context 'New grid' do
-    it 'is a grid object' do
-      expect(test_grid.is_a?(Grid)).to eq true
-    end
-
-    it 'responds to expected methods' do
-      expect(test_grid).to respond_to(:size)
-      expect(test_grid).to respond_to(:grid_array)
-    end
-
     it 'starts with a lifeless grid' do
       expect(test_grid.barren?).to eq true
     end

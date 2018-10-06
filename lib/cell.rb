@@ -13,5 +13,4 @@ class Cell
   def dead?
     !alive
   end
-
 end

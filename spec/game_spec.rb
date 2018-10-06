@@ -6,15 +6,6 @@ describe Game do
   let(:seeded_game) { described_class.new(Grid.new, [1, 2, 6]) }
 
   context 'New game' do
-    it 'is a Game object' do
-      expect(test_game.is_a?(Game)).to eq true
-    end
-
-    it 'responds to expected methods' do
-      expect(test_game).to respond_to(:grid)
-      expect(test_game).to respond_to(:seeds)
-    end
-
     it 'is barren before seeding' do
       expect(test_game.grid.barren?).to eq true
     end

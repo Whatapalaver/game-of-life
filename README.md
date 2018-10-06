@@ -22,3 +22,7 @@ The rules are as follows:
 - Any dead cell with exactly 3 neighbours becomes a live cell (reproduction).  
 
 Write code that is capable of calculating each new generation, given a starter board. Although you don't have to build a visualisation tool to be able to see the evolution, it should be easy to extend the program to add on a web or command line ui.
+
+Design Considerations
+------
+I initially started the design of my World with a 2 dimensional grid (an array of arrays). This began quite quickly to feel unecessarily complex so I translated back to a single dimension array and set up some rules for identifying 3D neighbour relationships. I'm happy with this representation as it also makes it very intuitive to wrap my World as the living cells reach the boundaries.
